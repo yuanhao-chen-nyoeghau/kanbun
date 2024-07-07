@@ -366,10 +366,12 @@ function register_verbatim ()
         "process_input_buffer" , store_lines , "store_lines")
 end
 % require main loop
-kanbunzwtosp = \luaescapestring{\kanbunzwtosp}
 require("kanbun.lua")
 }
-\def\Kanbun{\directlua{register_verbatim()}}
+\def\Kanbun{\directlua{
+  kanbunzwtosp = \luaescapestring{\kanbunzwtosp}
+  register_verbatim()
+}}
 \def\createcatcodes{%
     \bgroup%
         \catcode`\\=12 \catcode`\{=12 \catcode`\}=12%
