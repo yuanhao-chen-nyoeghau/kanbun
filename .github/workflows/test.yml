@@ -1,5 +1,11 @@
 name: Build LaTeX document for testing kanbun
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   build_latex:
     runs-on: ubuntu-latest
