@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin/sh
 
 # define variables
-YEAR=2022
-MONTH_ALPHA=february
-MONTH=2
-DAY=13
-VERSION=1.2
+YEAR=2025
+MONTH_ALPHA=march
+MONTH=3
+DAY=17
+VERSION=1.3
 
 REGEX="s|\\\\YEAR|${YEAR}|g;s|\\\\MONTH_ALPHA|${MONTH_ALPHA}|g;s|\\\\MONTH|${MONTH}|g;s|\\\\DAY|${DAY}|g;s|\\\\VERSION|${VERSION}|g"
 

@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 # write date and version number
-bash replace.sh
+./replace.sh
 
 # compile documents
 lualatex kanbun-example.tex
